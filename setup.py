@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 
-__version__ = "0.2.3"
+__version__ = "0.1.0"
 
 setup(
     name="pathman2",
@@ -14,10 +14,10 @@ setup(
     packages=find_packages(exclude=["tests"]),
     package_dir={"pathman2": "pathman2"},
     package_data={"pathman2": ["py.typed"]},
-    install_requires=requirements,
+    install_requires=[],
     extras_require={
         "s3": ["s3fs"]
-    }
+    },
     license="MIT",
     classifiers=["Development Status :: 3 - Alpha", "Topic :: Utilities"],
 )
